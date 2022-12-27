@@ -1,0 +1,131 @@
+section#section-3 {
+    height: 85vh;
+    width: 100%;
+}
+
+.highlights {
+    background: rgba(247, 247, 247, 0.7);
+    padding: 4rem auto;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+.highlights div {
+    padding: 5rem 0;
+}
+
+.highlights .highlight-vertical-txt {
+    display: flex;
+    justify-content: center;
+    /* transform: rotate(-90deg); */
+}
+
+.highlight-vertical-txt h5 {
+    position: relative;
+    height: 20px;
+    transform: rotate(-90deg);
+    top: 40%;
+    left: -50px;
+}
+.highlight-vertical-txt h5:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background: rgba(0,0,0,0.2);
+    bottom: 10px;
+    left: -120px;
+}
+
+
+.highlights .highlight-container{
+    /* background: #999; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.highlight-container div {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.item-container-small {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.item-container-small .furniture-container {
+    background-color: #EFEFEF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.furniture-container .img-container {
+    display: grid;
+    place-content: center;
+}
+.furniture-container .txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.txt-container h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.txt-container h1 span {
+    color: #C58940;
+}
+
+.txt-container p {
+    font-size: 10px;
+    color: rgba(0,0,0,0.5);
+    margin: 10px 0;
+}
+
+.txt-container button {
+    background: #C58940;
+    width: fit-content;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-size: 8px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.item-container-large {
+    /* height: 650px; */
+    /* padding: 1rem 0; */
+    margin: 1rem 0;
+    background-color: #EFEFEF;
+}
+
+
+
+.highlights .nav-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.highlights .nav-numbers h5 {
+    position: relative;
+    right: -50px;
+}
+
+.highlights .nav-numbers h5:nth-child(1),
+.highlights .nav-numbers h5:nth-child(3){
+    color: rgba(0,0,0,0.2);
+}
+
