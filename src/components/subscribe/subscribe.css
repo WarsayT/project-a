@@ -2,52 +2,57 @@ section#section-7{
     height: 30vh;
     width: 100%;
     background: #efefef;
-    display: flex;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
-.subscribe-container {
-    height: 40px;
-    margin: auto;
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+form.subscribe-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    place-items: center;
 }
 
-form.subscribe-container label {
-    /* margin-right: 80px; */
-    flex: 60%;
-    margin-right: 10px;
+.subscribe-container label{
+    justify-self: end;
 }
 
-form h1{
-    font-size: 15px;
+.subscribe-container > label > h1 {
+    font-size: 20px;
+    font-weight: 600;
 }
-/* form.subscribe-container label h1:before {
+
+.subscribe-container label h1::before {
     content: "";
-    width: 10px;
-    height: 20px;
-    color: black;
-    background: #333;
-} */
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translate(-130px, 12px);
+}
 
-form.subscribe-container div {
-    /* border: 1px solid #333; */
-    background: #fff;
-    width: 100%;
+.subscribe-container div {
+    justify-self: start;
+    /* background: #fff; */
+    width: 25rem;
     height: 40px;
-    border-radius: 50px 0px 0px 50px;
+    /* border-radius: 50px 50px 50px 50px; */
     overflow: hidden;
+    display: grid;
+    /* place-items: center; */
+    grid-template-columns: 60% 35%;
 }
 
 .subscribe-container div input {
-    width: 90%;
-    height: 100%;
+    /* width: 90%; */
+    /* height: 100%; */
     overflow: hidden;
     padding-left: 20px;
     color: #999;
     font-size: 15px;
+    /* border: 1px solid black; */
+    border-radius: 50px 0 0 50px;
 }
 .subscribe-container input::placeholder {
     color: rgba(0,0,0,0.1);
@@ -56,13 +61,54 @@ form.subscribe-container div {
 }
 
 form.subscribe-container button {
-    /* border: 1px solid #333; */
     background: #C58940;
     color: #fff;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1.5px;
-    width: 40%;
-    height: 40px;
+    padding: 10px 20px;
     border-radius: 0px 50px 50px 0px;
+}
+
+
+@media screen and (max-device-width:1024px), screen and (max-width: 1024px) {
+    form.subscribe-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 1rem;
+    }
+
+    .subscribe-container label {
+        justify-self: center;
+    }
+
+    .subscribe-container label h1 {
+        font-size: 25px;
+    }
+
+    .subscribe-container label h1::before {
+        display: none;
+    }
+
+    .subscribe-container div {
+        justify-self: center;
+    }
+    
+}
+
+@media screen and (max-device-width:600), screen and (max-width: 600) {
+    form.subscribe-container {
+        width: 100%;
+    }
+    .subscribe-container label h1::before {
+        display: none;
+    }
+    .subscribe-container form h1{
+        font-size: 15px;
+    }
+
+    .subscribe-container div {
+        width: 19rem;
+    }
 }

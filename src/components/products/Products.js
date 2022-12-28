@@ -22,7 +22,7 @@ const Products = () => {
         </div>
 
         <div className='products-display'>
-          <div className='product-items'>
+          {/* <div className='product-items'> */}
             <div className='product-card'>
               <h1>270x380</h1>
               <div className='product-card-footer'>
@@ -55,9 +55,9 @@ const Products = () => {
                 <p>$130.25</p>
               </div>
             </div>
-          </div>
+          {/* </div>
 
-          <div className='product-items'>
+          <div className='product-items'> */}
             <div className='product-card'>
               <h1>270x380</h1>
               <div className='product-card-footer'>
@@ -90,7 +90,7 @@ const Products = () => {
                 <p>$130.25</p>
               </div>
             </div>
-          </div>
+          {/* </div> */}
 
         </div>
 
