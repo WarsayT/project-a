@@ -10,7 +10,7 @@ section#section-3 {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 10% 80% 10%;
 }
 
 .highlights div {
@@ -18,26 +18,27 @@ section#section-3 {
 }
 
 .highlights .highlight-vertical-txt {
-    display: flex;
-    justify-content: center;
-    /* transform: rotate(-90deg); */
+    font-size: 15px;
+    display: grid;
+    place-items: center;
 }
 
 .highlight-vertical-txt h5 {
-    position: relative;
-    height: 20px;
     transform: rotate(-90deg);
-    top: 40%;
+    /* height: 100%; */
+    position: relative;
+    width: 200px;
     left: -50px;
+    top: -70px;
 }
-.highlight-vertical-txt h5:after {
+.highlight-vertical-txt h5::before {
     content: "";
     position: absolute;
     height: 1px;
     width: 100px;
     background: rgba(0,0,0,0.2);
-    bottom: 10px;
-    left: -120px;
+    bottom: 8px;
+    left: -120px
 }
 
 
@@ -146,7 +147,10 @@ section#section-3 {
 
 .highlights .nav-numbers h5 {
     position: relative;
-    right: -50px;
+    /* right: -50px; */
+    margin-left: 50px;
+    margin-right: 10px;
+    line-height: 1.5rem;
 }
 
 .highlights .nav-numbers h5:nth-child(1),

@@ -5,6 +5,7 @@ section#section-4{
     display: grid;
     grid-template-rows: 30% 70%;
     place-items: center;
+    padding: 100px 0;
 }
 
 .deal-timer-container {

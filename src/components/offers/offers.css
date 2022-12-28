@@ -1,5 +1,69 @@
 section#section-5{
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background: #333;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    justify-content: center;
+    color: #fff;
+    /* padding: 5rem 0; */
+}
+
+.offer-header {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.offer-details {
+    margin: 0 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.offer-details .offer-item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 1rem;
+    margin: 0 2rem;
+}
+
+.offer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.offer-details .offer-item .offer-content p {
+    color: rgba(255,255,255, 0.6);
+    font-size: 11px;
+    margin-bottom: 1rem;
+}
+
+.logo-offer .logo{
+    background: var(--color-primary-variant);
+    /* border: 1px solid #999; */
+    /* font-size: 20px; */
+    border-radius: 50%;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+.offer-content button {
+    background: rgba(115, 119, 123, 0.5);
+    color: rgba(255,255,255, 0.2);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    width: fit-content;
+    padding: 12px 20px;
+    border-radius: 50px;
+}
+
+.offer-content button:hover {
+    background: var(--color-primary-variant);
+    color: #fff;
 }
