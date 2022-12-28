@@ -4,7 +4,7 @@ import './highlights.css'
 
 const Highlights = () => {
   return (
-    <section className='section-3'>
+    <section id='section-3'>
         <div className='highlights'>
             <div className='highlight-vertical-txt'>
                 <h5>LAST40 HIGHLIGHT 2017</h5>
@@ -17,7 +17,7 @@ const Highlights = () => {
                         </div>
                         <div className='txt-container'>
                             <h5>Indoor</h5>
-                            <h1>FURNITURE<span>.</span></h1>
+                            <h1>Furniture<span>.</span></h1>
                             <p>
                                 Find all branded fashion for men lorem ipsum.
                             </p>
@@ -30,7 +30,7 @@ const Highlights = () => {
                         </div>
                         <div className='txt-container'>
                             <h5>Indoor</h5>
-                            <h1>FURNITURE<span>.</span></h1>
+                            <h1>Furniture<span>.</span></h1>
                             <p>
                                 Find all branded fashion for men lorem ipsum.
                             </p>
@@ -41,7 +41,16 @@ const Highlights = () => {
                 </div>
 
                 <div className='item-container-large'>
-                    
+                    <div className='img-container'>
+                        <h1>370x700</h1>
+                    </div>
+                    <div className='txt-container'>
+                        <h1><span>Now </span>Arrival<span>.</span></h1>
+                        <p>
+                            Find all branded fashion for men lorem ipsum.
+                        </p>
+                        <button>SHOP NOW</button>
+                    </div>
                 </div>
 
                 <div className='item-container-small'>
@@ -51,7 +60,7 @@ const Highlights = () => {
                         </div>
                         <div className='txt-container'>
                             <h5>Indoor</h5>
-                            <h1>FURNITURE<span>.</span></h1>
+                            <h1>Furniture<span>.</span></h1>
                             <p>
                                 Find all branded fashion for men lorem ipsum.
                             </p>
@@ -64,7 +73,7 @@ const Highlights = () => {
                         </div>
                         <div className='txt-container'>
                             <h5>Indoor</h5>
-                            <h1>FURNITURE<span>.</span></h1>
+                            <h1>Furniture<span>.</span></h1>
                             <p>
                                 Find all branded fashion for men lorem ipsum.
                             </p>

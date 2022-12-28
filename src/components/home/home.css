@@ -3,15 +3,20 @@
     background: rgba(247, 247, 247, 1);
     height: 100%;
     width: 100%;
-    display: flex;
+    /* display: flex;
     gap: 1rem;
     flex-direction: row;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
+    grid-template-columns: 10% 50% 30% 10%;
+
 }
 
 .home .vertical-txt {
-    height: 40rem;
-    width: 13rem;
+    /* height: 40rem;
+    width: 13rem; */
+    height: 100%;
     display: flex;
     place-items: center;
     justify-content: center;
@@ -19,7 +24,9 @@
 .home .vertical-txt h5{
     transform: rotate(-90deg); 
     position: relative;
-    top: -30px;
+    width: 100%;
+    /* top: -30px;
+    height: 100%; */
     /* left: 300px */
 }
 
@@ -43,6 +50,7 @@
 .home .home-content {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     width: 20rem;
 }
 .home-content h5 {

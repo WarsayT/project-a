@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+:root {
+    --color-primary-variant: rgb(197,137,64);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -20,5 +24,9 @@ html {
 
 body{
     font-family: 'Open Sans', sans-serif;
+}
+
+button{
+    cursor: pointer;
 }
 
